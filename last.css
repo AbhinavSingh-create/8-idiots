@@ -13,13 +13,14 @@ div {
 }
 
 h1 {
-    margin-top: 200px;
-    margin-left: 50px;
-    font-size: 100px;
+    margin-top: 64px;
+    margin-left: 0px;
     font-family: serif;
     color: transparent;
     text-align: center;
     animation: effect 2s linear infinite;
+    font-size: 2.4375rem;
+font-size: clamp(2.4375rem, 1.600609756097561rem + 3.719512195121951vw, 6.25rem);
 }
 
 @keyframes effect {
@@ -36,8 +37,14 @@ h1 {
 .same{
     text-decoration: none;
 }
-.back{
-    margin-left: 300px;
+.back {
+    margin-left: 115px;
+    @media (width>=425px){
+        margin-left: 290px;
+    }
+    @media (width>=768px){
+        margin-left: 605px;
+    }
     height: 30px;
     width: 100px;
     font: 1em sans-serif;
