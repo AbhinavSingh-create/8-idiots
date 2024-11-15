@@ -1,0 +1,52 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-top: 200px;
+    margin-left: 50px;
+    font-size: 100px;
+    font-family: serif;
+    color: transparent;
+    text-align: center;
+    animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(#008000, #00FF00);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+}
+.same{
+    text-decoration: none;
+}
+.back{
+    margin-left: 300px;
+    height: 30px;
+    width: 100px;
+    font: 1em sans-serif;
+    font-size: 13px;
+    border: 1px dashed black;
+}
+.back:hover{
+   
+    background-color:#000FFF ;
+}
+a:hover { text-decoration: none;
+color:#00FF00;}
